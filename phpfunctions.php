@@ -24,6 +24,16 @@
 
 			echo carDescription("2000", "Mazda", "Miata");
 
+			/* array function */
+			$petArray = array("Matano", "Buster", "Arlo", "Oprah", "Uma", "Sister", "Chow", "Doby", "Harry", "Holly");
+
+			function sortPets($petAlphaList) {
+			sort($petArray);
+			return $petAlphaList;
+			}
+
+			echo sortPets($petArray);
+
 		?>
 
 	</body>
