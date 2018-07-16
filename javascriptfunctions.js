@@ -1,13 +1,13 @@
 
 
 /* number function */
-function multiplication(firstNumber, secondNumber){
-	return firstNumber * secondNumber;
+function farenheightToCelcius(farenheight){
+	return (farenheight - 32) * .5556;
 }
 
-let product = multiplication(235, 5);
+let celcius = farenheightToCelcius(78);
 
-console.log(product);
+console.log(celcius);
 
 
 /* string function */
