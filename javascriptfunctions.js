@@ -1,5 +1,3 @@
-
-
 /* number function */
 function farenheightToCelcius(farenheight){
 	return (farenheight - 32) * .5556;
@@ -8,7 +6,6 @@ function farenheightToCelcius(farenheight){
 let celcius = farenheightToCelcius(78);
 
 console.log(celcius);
-
 
 /* string function */
 function carDescription(year, make, model) {
@@ -20,11 +17,11 @@ console.log(carDescription("2000", "Mazda", "Miata"));
 
 /* array function */
 
-let petArray = ["Matano", "Buster", "Arlo", "Oprah", "Uma", "Sister", "Chow", "Doby", "Harry"];
+let petArray = ["Matano", "Buster", "Arlo", "Oprah", "Uma", "Sister", "Chow", "Doby", "Harry", "Holly"];
 
-function sortPets(petList) {
-	petList.sort();
-	return petList;
+function sortPets(petAlphaList) {
+	petAlphaList.sort();
+	return petAlphaList;
 }
 
 console.log(sortPets(petArray));
