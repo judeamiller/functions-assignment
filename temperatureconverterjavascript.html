@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Temp Converter</title>
+
+	</head>
+	<body>
+        <h1>Convert Farenheight to Celcius</h1>
+        <div class="temp-converter-contaainer">
+			<form id="temp-converter">
+				<div>
+					<label for="degrees-farenheight">Degrees Farenheight</label>
+                    <input type="number" id="degrees-farenheight" placeholder="enter farenheight" 
+                    oninput="farenheightToCelcius(this.value) ; farenheightToKelvin(this.value)"  
+                    onchange="farenheightToCelcius(this.value) ; farenheightToKelvin(this.value)"
+                   />
+				</div>
+                <h2>Degrees Celcius: <span id="convertedCelcius"/></h2>
+                <h2>Degrees Kelvin: <span id="convertedKelvin"/></h2>
+				</div>
+			</form>
+		</div>
+		
+
+    <script>
+    function farenheightToCelcius(value){
+        document.getElementById("convertedCelcius").innerHTML = (value - 32) * .5556;
+    }
+
+    
+   function farenheightToKelvin(value){
+        document.getElementById("convertedKelvin").innerHTML = (parseInt(value) + 459.67) * .5556;
+   }
+
+
+
+    </script>
+    </body>
+</html>
