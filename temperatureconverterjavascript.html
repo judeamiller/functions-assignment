@@ -7,10 +7,11 @@
 	</head>
 	<body>
         <h1>Convert Farenheight to Celcius</h1>
+				<p>Enter a temperature in degrees farenheight in the box provided below.</p>
         <div class="temp-converter-contaainer">
 			<form id="temp-converter">
 				<div>
-					<label for="degrees-farenheight">Degrees Farenheight</label>
+					<label for="degrees-farenheight"><strong>Degrees Farenheight: </strong></label>
                     <input type="number" id="degrees-farenheight" placeholder="enter farenheight" 
                     oninput="farenheightToCelcius(this.value) ; farenheightToKelvin(this.value)"  
                     onchange="farenheightToCelcius(this.value) ; farenheightToKelvin(this.value)"
